@@ -52,6 +52,7 @@ text-decoration: none;
 }
 
 nav{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     
@@ -120,4 +121,53 @@ main{
 #quick-list{
     color:#727272;
     font-weight: 600;
+}
+
+
+
+
+
+/* _____________________ */
+/* Responsive */
+/* Small Device */
+@media screen and (max-width: 576px) {
+  
+    .nav-list, .nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        padding: 1rem;
+        
+    }
+    
+    
+    .features{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header{
+        background-color: #FF900E10;
+        padding: 1rem;
+    }
+    .features-image{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .features-text{
+        padding:2rem;
+    }
+    .container1{
+        max-width: auto;
+        background-color: #FF900E10;
+    }
+    .header-container-text{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
