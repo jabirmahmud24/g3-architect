@@ -96,6 +96,10 @@ header{
 main{
     max-width: 1200px;
     margin: 0 auto;
+    
+}
+/* First Section */
+.main-first-section{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,6 +127,46 @@ main{
     font-weight: 600;
 }
 
+/* Features Card Section */
+    /* Left Side */
+    .features-card-parent{
+        margin-top: 130px;
+        display: flex;
+        gap: 4rem;
+
+    }
+    .features-card h5{
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0px;
+       
+    }
+    #card-title{
+        font-size: 2rem;
+        font-weight: 600;
+        border-left: 5px solid #FF900E;
+        padding-left: 1rem;
+        
+
+    }
+    .features-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 0px;
+    }
+
+    #experienxe-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#button-experience{
+    font-size: 4rem;
+    font-weight: bold;
+}
 
 
 
@@ -132,7 +176,7 @@ main{
 /* Small Device */
 @media screen and (max-width: 576px) {
   
-    .nav-list, .nav{
+    .nav-list, .nav {
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -155,6 +199,7 @@ main{
     .features-image{
         display:grid;
         grid-template-columns: 1fr;
+        
     }
     .features-text{
         padding:2rem;
@@ -170,4 +215,48 @@ main{
         align-items: center;
         justify-content: center;
     }
+    /* Features Card */
+    .features-card-parent{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+     #image-btn{
+       width: 100%;
+       margin-bottom: 200px;
+     }
+     #button-experience{
+        margin-top: 20px;
+        padding-top: 20px;   
+     }
 }
+
+/* Medium Size Display */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .features-text{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Features Card Parent */
+    .features-card-parent{
+            display: flex;
+            flex-direction: column;
+    }
+   #image-btn{
+       width: 100%;
+       margin-bottom: 200px;}
+   }
+   #button-experience{
+        margin-top: 20px;
+        padding-top: 20px;   
+     }
